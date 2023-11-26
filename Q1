@@ -1,0 +1,24 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+def f(x):
+    return x**2
+
+def g(x):
+    return x**3
+
+x_values = np.linspace(-1, 1, 100)
+
+y_f = f(x_values)
+y_g = g(x_values)
+
+plt.plot(x_values, y_f, label='f(x) = x^2')
+plt.plot(x_values, y_g, label='g(x) = x^3')
+
+plt.xlabel('x')
+plt.ylabel('y')
+plt.title('Graphs of f(x) = x^2 and g(x) = x^3')
+plt.legend()
+
+plt.grid(True)
+plt.show()
